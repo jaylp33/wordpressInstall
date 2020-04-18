@@ -18,36 +18,25 @@
  * @package WordPress
  */
 
-// // ** MySQL settings - You can get this info from your web host ** //
-// /** The name of the database for WordPress */
-// define( 'DB_NAME', 'database_name_here' );
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'database_name_here' );
 
-// /** MySQL database username */
-// define( 'DB_USER', 'username_here' );
+/** MySQL database username */
+define( 'DB_USER', 'username_here' );
 
-// /** MySQL database password */
-// define( 'DB_PASSWORD', 'password_here' );
+/** MySQL database password */
+define( 'DB_PASSWORD', 'password_here' );
 
-// /** MySQL hostname */
-// define( 'DB_HOST', 'localhost' );
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );
 
-// /** Database Charset to use in creating database tables. */
-// define( 'DB_CHARSET', 'utf8' );
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
 
-// /** The Database Collate type. Don't change this if in doubt. */
-// define( 'DB_COLLATE', '' );
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
 
-if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
-    $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
-    define('d2pkchdrf4cufh', trim($db[`path`],`/`));
-    define('bpbbodydjqngazb', $db[`user`]);
-    define('455625d9aba1ec0592db80fbc64b45f78ddc7694da74e33b2e21c959709c10c9', $db[`pass`]);
-    define('ec2-18-233-137-77.compute-1.amazonaws.com', $db[`host`]);
-    define('DB_CHARSET', 'utf8');
-    define('DB_COLLATE', '');
-} else {
-    die('No Database credentials!');
-}
 
 /**#@+
  * Authentication Unique Keys and Salts.
