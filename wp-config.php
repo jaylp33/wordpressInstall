@@ -39,10 +39,10 @@
 
 if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
     $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
-    define('heroku_e62c2f6aaa63ba7', trim($db[`path`],`/`));
-    define('be3a389e4d9efe', $db[`user`]);
-    define('8184b32f', $db[`pass`]);
-    define('https://www.cleardb.com/database/details?id=472BA513457203DBF171AD4635A425C9', $db[`host`]);
+    define('d2pkchdrf4cufh', trim($db[`path`],`/`));
+    define('bpbbodydjqngazb', $db[`user`]);
+    define('455625d9aba1ec0592db80fbc64b45f78ddc7694da74e33b2e21c959709c10c9', $db[`pass`]);
+    define('ec2-18-233-137-77.compute-1.amazonaws.com', $db[`host`]);
     define('DB_CHARSET', 'utf8');
     define('DB_COLLATE', '');
 } else {
