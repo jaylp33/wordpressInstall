@@ -36,7 +36,6 @@
 
 // /** The Database Collate type. Don't change this if in doubt. */
 // define( 'DB_COLLATE', '' );
-CLEARDB_DATABASE_URL => mysql://[username]:[password]@[host]/[database name]?reconnect=true
 
 if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
     $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
