@@ -42,7 +42,7 @@ if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
     define('heroku_e62c2f6aaa63ba7', trim($db[`path`],`/`));
     define('be3a389e4d9efe', $db[`user`]);
     define('8184b32f ', $db[`pass`]);
-    define('DB_HOST', $db[`host`]);
+    define('heroku_e62c2f6aaa63ba7', $db[`host`]);
     define('DB_CHARSET', 'utf8');
     define('DB_COLLATE', '');
 } else {
