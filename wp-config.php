@@ -36,13 +36,14 @@
 
 // /** The Database Collate type. Don't change this if in doubt. */
 // define( 'DB_COLLATE', '' );
+CLEARDB_DATABASE_URL => mysql://[username]:[password]@[host]/[database name]?reconnect=true
 
 if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
     $db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
     define('heroku_e62c2f6aaa63ba7', trim($db[`path`],`/`));
     define('be3a389e4d9efe', $db[`user`]);
-    define('8184b32f ', $db[`pass`]);
-    define('heroku_e62c2f6aaa63ba7', $db[`host`]);
+    define('8184b32f', $db[`pass`]);
+    define('https://www.cleardb.com/database/details?id=472BA513457203DBF171AD4635A425C9', $db[`host`]);
     define('DB_CHARSET', 'utf8');
     define('DB_COLLATE', '');
 } else {
